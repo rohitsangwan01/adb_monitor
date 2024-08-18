@@ -2,14 +2,7 @@
 
 Monitor Adb devices connection using Rust
 
-## About
-
-This package uses FFI with [flutter_rust_bridge](https://pub.dev/packages/flutter_rust_bridge) to call Rust code.
-On Rust's side, the [autoadb](https://github.com/rom1v/autoadb) is used to detect adb devices.
-
 ## Getting Started
-
-on `MacOS` set sandbox to false
 
 ### Installation
 
@@ -19,6 +12,15 @@ on `MacOS` set sandbox to false
 ```yaml
 dependencies:
   adb_monitor: <version>
+```
+
+### Platforms Setup
+
+on `MacOS` set sandbox to `false` in `macos/Runner/*.entitlements`
+
+```xml
+	<key>com.apple.security.app-sandbox</key>
+	<false/>
 ```
 
 ### Initialization
@@ -53,3 +55,9 @@ Stop Monitoring
 ```dart
 AdbMonitor.stop()
 ```
+
+## Note
+
+This package uses FFI with [flutter_rust_bridge](https://pub.dev/packages/flutter_rust_bridge) to call Rust code.
+
+On Rust's side, the [autoadb](https://github.com/rom1v/autoadb) is used to detect adb devices.
