@@ -1,6 +1,7 @@
 # Adb Monitor
+[![adb_monitor version](https://img.shields.io/pub/v/adb_monitor?label=adb_monitor)](https://pub.dev/packages/adb_monitor)
 
-Monitor Adb devices connection using Rust
+Flutter library to Monitor Adb devices connection using Rust
 
 ## Getting Started
 
