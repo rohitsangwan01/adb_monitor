@@ -6,7 +6,7 @@ Monitor Adb devices connection using Rust
 
 ### Installation
 
-1. Install Rust via [rustup](https://rustup.rs/).
+1. Install Rust via [rustup](https://rustup.rs/)
 2. Add `adb_monitor` to `pubspec.yaml`:
 
 ```yaml
@@ -19,8 +19,8 @@ dependencies:
 on `MacOS` set sandbox to `false` in `macos/Runner/*.entitlements`
 
 ```xml
-	<key>com.apple.security.app-sandbox</key>
-	<false/>
+<key>com.apple.security.app-sandbox</key>
+<false/>
 ```
 
 ### Initialization
