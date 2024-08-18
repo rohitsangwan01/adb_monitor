@@ -5,7 +5,7 @@ homepage: "https://github.com/rohitsangwan01/adb_monitor"
 
 environment:
   sdk: ^3.5.0
-  flutter: '>=3.3.0'
+  flutter: ">=3.3.0"
 
 dependencies:
   flutter:
@@ -26,4 +26,6 @@ flutter:
       linux:
         ffiPlugin: true
       macos:
+        ffiPlugin: true
+      windows:
         ffiPlugin: true
